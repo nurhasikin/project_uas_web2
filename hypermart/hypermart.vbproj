@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{2AF10059-AC59-48CE-97F4-4ED31F21D7F7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>hypermart</RootNamespace>
+    <AssemblyName>hypermart</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44330</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>hypermart.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>hypermart.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\bootstrap-theme.min.css" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\checkbox3.min.css" />
+    <Content Include="assets\css\custom-styles.css" />
+    <Content Include="assets\css\font-awesome.css" />
+    <Content Include="assets\css\select2.min.css" />
+    <Content Include="assets\font-awesome\fonts\fontawesome-webfontba72.svg" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\img\bg-img.jpg" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\chart-data.js" />
+    <Content Include="assets\js\chart.min.js" />
+    <Content Include="assets\js\chartjs.js" />
+    <Content Include="assets\js\custom-scripts.js" />
+    <Content Include="assets\js\custom.js" />
+    <Content Include="assets\js\dataTables\dataTables.bootstrap.css" />
+    <Content Include="assets\js\dataTables\dataTables.bootstrap.js" />
+    <Content Include="assets\js\dataTables\jquery.dataTables.js" />
+    <Content Include="assets\js\easypiechart-data.js" />
+    <Content Include="assets\js\easypiechart.js" />
+    <Content Include="assets\js\jquery-1.10.2.js" />
+    <Content Include="assets\js\jquery.metisMenu.js" />
+    <Content Include="assets\js\Lightweight-Chart\chart.js" />
+    <Content Include="assets\js\Lightweight-Chart\cssCharts.css" />
+    <Content Include="assets\js\Lightweight-Chart\index - Copy.html" />
+    <Content Include="assets\js\Lightweight-Chart\index.html" />
+    <Content Include="assets\js\Lightweight-Chart\jquery.chart.js" />
+    <Content Include="assets\js\Lightweight-Chart\jquery.chart.min.js" />
+    <Content Include="assets\js\morris\morris-0.4.3.min.css" />
+    <Content Include="assets\js\morris\morris.js" />
+    <Content Include="assets\js\morris\raphael-2.1.0.min.js" />
+    <Content Include="assets\js\select2.full.min.js" />
+    <Content Include="dataadmin.aspx" />
+    <Content Include="databarang.aspx" />
+    <Content Include="datadetailtransaksi.aspx" />
+    <Content Include="datakonsumen.aspx" />
+    <Content Include="datatransaksi.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="login\css\bootstrap.min.css" />
+    <Content Include="login\css\bootstrap\bootstrap-grid.css" />
+    <Content Include="login\css\bootstrap\bootstrap-reboot.css" />
+    <Content Include="login\css\owl.carousel.min.css" />
+    <Content Include="login\css\style.css" />
+    <Content Include="login\fonts\icomoon\demo-files\demo.css" />
+    <Content Include="login\fonts\icomoon\demo-files\demo.js" />
+    <Content Include="login\fonts\icomoon\demo.html" />
+    <Content Include="login\fonts\icomoon\fonts\icomoon.svg" />
+    <Content Include="login\fonts\icomoon\Read Me.txt" />
+    <Content Include="login\fonts\icomoon\style.css" />
+    <Content Include="login\images\bg_1.jpg" />
+    <Content Include="login\images\undraw_file_sync_ot38.svg" />
+    <Content Include="login\index.aspx" />
+    <Content Include="login\js\bootstrap.min.js" />
+    <Content Include="login\js\jquery-3.3.1.min.js" />
+    <Content Include="login\js\main.js" />
+    <Content Include="login\js\owl.carousel.min.js" />
+    <Content Include="login\js\popper.min.js" />
+    <Content Include="login\login.aspx" />
+    <Content Include="login\register.aspx" />
+    <Content Include="tambahdataadmin.aspx" />
+    <Content Include="tambahdatabarang.aspx" />
+    <Content Include="tambahdatakonsumen.aspx" />
+    <Content Include="tambahdatapenjualan.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dataadmin.aspx.designer.vb">
+      <DependentUpon>dataadmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dataadmin.aspx.vb">
+      <DependentUpon>dataadmin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="databarang.aspx.designer.vb">
+      <DependentUpon>databarang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="databarang.aspx.vb">
+      <DependentUpon>databarang.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="datadetailtransaksi.aspx.designer.vb">
+      <DependentUpon>datadetailtransaksi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="datadetailtransaksi.aspx.vb">
+      <DependentUpon>datadetailtransaksi.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="datakonsumen.aspx.designer.vb">
+      <DependentUpon>datakonsumen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="datakonsumen.aspx.vb">
+      <DependentUpon>datakonsumen.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="datatransaksi.aspx.designer.vb">
+      <DependentUpon>datatransaksi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="datatransaksi.aspx.vb">
+      <DependentUpon>datatransaksi.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="login\index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login\index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="login\login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login\login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="login\register.aspx.designer.vb">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login\register.aspx.vb">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="tambahdataadmin.aspx.designer.vb">
+      <DependentUpon>tambahdataadmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tambahdataadmin.aspx.vb">
+      <DependentUpon>tambahdataadmin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="tambahdatabarang.aspx.designer.vb">
+      <DependentUpon>tambahdatabarang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tambahdatabarang.aspx.vb">
+      <DependentUpon>tambahdatabarang.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="tambahdatakonsumen.aspx.designer.vb">
+      <DependentUpon>tambahdatakonsumen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tambahdatakonsumen.aspx.vb">
+      <DependentUpon>tambahdatakonsumen.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="tambahdatapenjualan.aspx.designer.vb">
+      <DependentUpon>tambahdatapenjualan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tambahdatapenjualan.aspx.vb">
+      <DependentUpon>tambahdatapenjualan.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\font-awesome\fonts\fontawesome-webfontba72.eot" />
+    <Content Include="assets\font-awesome\fonts\fontawesome-webfontba72.ttf" />
+    <Content Include="assets\font-awesome\fonts\fontawesome-webfontba72.woff" />
+    <Content Include="assets\font-awesome\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="assets\js\Lightweight-Chart\README.md" />
+    <Content Include="login\css\.DS_Store" />
+    <Content Include="login\css\bootstrap.min.css.map" />
+    <Content Include="login\fonts\.DS_Store" />
+    <Content Include="login\fonts\icomoon\fonts\icomoon.eot" />
+    <Content Include="login\fonts\icomoon\fonts\icomoon.ttf" />
+    <Content Include="login\fonts\icomoon\fonts\icomoon.woff" />
+    <Content Include="login\fonts\icomoon\selection.json" />
+    <Content Include="login\images\.DS_Store" />
+    <Content Include="login\scss\.DS_Store" />
+    <Content Include="login\scss\bootstrap\bootstrap-grid.scss" />
+    <Content Include="login\scss\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="login\scss\bootstrap\bootstrap.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_alert.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_badge.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_caret.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_deprecate.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_float.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_hover.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_image.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_lists.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_size.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_table-row.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_transition.scss" />
+    <Content Include="login\scss\bootstrap\mixins\_visibility.scss" />
+    <Content Include="login\scss\bootstrap\utilities\_align.scss" />
+    <Content Include="login\scss\bootstrap\utilities\_background.scss" />
+    <Content Include="login\scss\bootstrap\utilities\_borders.scss" />
+    <Content Include="login\scss\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="login\scss\bootstrap\utilities\_display.scss" />
+    <Content Include="login\scss\bootstrap\utilities\_embed.scss" />
+    <Content Include="login\scss\bootstrap\utilities\_flex.scss" />
+    <Content Include="login\scss\bootstrap\utilities\_float.scss" />
+    <Content Include="login\scss\bootstrap\utilities\_overflow.scss" />
+    <Content Include="login\scss\bootstrap\utilities\_position.scss" />
+    <Content Include="login\scss\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="login\scss\bootstrap\utilities\_shadows.scss" />
+    <Content Include="login\scss\bootstrap\utilities\_sizing.scss" />
+    <Content Include="login\scss\bootstrap\utilities\_spacing.scss" />
+    <Content Include="login\scss\bootstrap\utilities\_stretched-link.scss" />
+    <Content Include="login\scss\bootstrap\utilities\_text.scss" />
+    <Content Include="login\scss\bootstrap\utilities\_visibility.scss" />
+    <Content Include="login\scss\bootstrap\vendor\_rfs.scss" />
+    <Content Include="login\scss\bootstrap\_alert.scss" />
+    <Content Include="login\scss\bootstrap\_badge.scss" />
+    <Content Include="login\scss\bootstrap\_breadcrumb.scss" />
+    <Content Include="login\scss\bootstrap\_button-group.scss" />
+    <Content Include="login\scss\bootstrap\_buttons.scss" />
+    <Content Include="login\scss\bootstrap\_card.scss" />
+    <Content Include="login\scss\bootstrap\_carousel.scss" />
+    <Content Include="login\scss\bootstrap\_close.scss" />
+    <Content Include="login\scss\bootstrap\_code.scss" />
+    <Content Include="login\scss\bootstrap\_custom-forms.scss" />
+    <Content Include="login\scss\bootstrap\_dropdown.scss" />
+    <Content Include="login\scss\bootstrap\_forms.scss" />
+    <Content Include="login\scss\bootstrap\_functions.scss" />
+    <Content Include="login\scss\bootstrap\_grid.scss" />
+    <Content Include="login\scss\bootstrap\_images.scss" />
+    <Content Include="login\scss\bootstrap\_input-group.scss" />
+    <Content Include="login\scss\bootstrap\_jumbotron.scss" />
+    <Content Include="login\scss\bootstrap\_list-group.scss" />
+    <Content Include="login\scss\bootstrap\_media.scss" />
+    <Content Include="login\scss\bootstrap\_mixins.scss" />
+    <Content Include="login\scss\bootstrap\_modal.scss" />
+    <Content Include="login\scss\bootstrap\_nav.scss" />
+    <Content Include="login\scss\bootstrap\_navbar.scss" />
+    <Content Include="login\scss\bootstrap\_pagination.scss" />
+    <Content Include="login\scss\bootstrap\_popover.scss" />
+    <Content Include="login\scss\bootstrap\_print.scss" />
+    <Content Include="login\scss\bootstrap\_progress.scss" />
+    <Content Include="login\scss\bootstrap\_reboot.scss" />
+    <Content Include="login\scss\bootstrap\_root.scss" />
+    <Content Include="login\scss\bootstrap\_spinners.scss" />
+    <Content Include="login\scss\bootstrap\_tables.scss" />
+    <Content Include="login\scss\bootstrap\_toasts.scss" />
+    <Content Include="login\scss\bootstrap\_tooltip.scss" />
+    <Content Include="login\scss\bootstrap\_transitions.scss" />
+    <Content Include="login\scss\bootstrap\_type.scss" />
+    <Content Include="login\scss\bootstrap\_utilities.scss" />
+    <Content Include="login\scss\bootstrap\_variables.scss" />
+    <Content Include="login\scss\style.scss" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\plugins\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63963</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44330/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
